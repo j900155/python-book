@@ -188,4 +188,29 @@ class Arithmetic:
 a = a1 = a2 = a3
 ```
 
+##class
+如果一個class沒有明確的繼承那就放入object
+```python
+class example(object):
+    pass
+    class innerclass(objece):
+        pass
+ 
+ 
+class add(a, b):
+    pass
+```
+
+##String
+選擇使用最好的方法來做
+```python
+a = "hello"
+b = "world"
+c = 9
+x = a + b #比 x = "%s%s"%(a, b) 好
+x = "%s %s !!"%(a, b)
+x= "%s %s * %d"%(a, b, c)
+
+```
+
 
