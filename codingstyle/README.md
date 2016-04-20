@@ -80,7 +80,13 @@ foo = long_function_name(
 
 ##空白行
 在開頭重要的Class以及函式宣告和後面的程式之間用兩空白行隔開，寫在程式裡的函式宣告只需要一空白行隔開。
+```python
 
+class example
+    name = "Hello world"
+    
+print example.name
+```
 ##空格
 在括弧內的參數不添加任何空格。
 
