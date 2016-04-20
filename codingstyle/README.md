@@ -212,5 +212,9 @@ x = "%s %s !!"%(a, b)
 x= "%s %s * %d"%(a, b, c)
 
 ```
-
+如果要換行善用 \n
+```python
+ print ("This is much nicer.\n"
+         "Do it this way.\n")
+```
 
