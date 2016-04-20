@@ -182,4 +182,10 @@ class Arithmetic:
     def subtraction():
         return  self.a - self.b
 ```
+最後要在不明白或是棘手的地方下註解
+```python
+#a 的及果是多少我不知道
+a = a1 = a2 = a3
+```
+
 
