@@ -8,33 +8,33 @@
 - 不要使用反斜線來接續兩行。
 - 確保隱行被放在括弧(大、中、小)中，如有必要可以在表達式外額外新增括弧。
  
- ```
+ ```python
  foo_bar(self, width, height, color='black', design=None, x='foo',
       emphasis=None, highlight=0) 
  ```
  
- ```
+ ```python
  if(width == 0 and height == 0 and
      color == 'red' and emphasis == 'strong')
  ```
  
 - 當字串長度大於一行時，將其分行並使用括弧將整個字串包起來。
   
-  ```
+  ```python
   x=('This will build a very long long'
       'long long long long long long string')
  ```
  
 - 放在註解中的URL連結盡量避免分行，如有需要，連結可以放在獨立的一行
   
-  ```
-  正確: 
+  ```python
+  #正確: 
   #See details at
   #http://www.example.com/us/developer/documentation/api/content/v2.0/csv_file_name_extension_full_specification.html
   ```
   
-  ```
-  錯誤: 
+  ```python
+  #錯誤: 
   # See details 
   # http://www.example.com/us/developer/documentation/api/content/\
   # v2.0/csv_file_name_extension_full_specification.html
@@ -45,7 +45,7 @@
 ## 括弧
 盡量減少括弧的使用。回傳值和判斷式除非包含函式或是隱行否則避免使用。
 
-```
+```python
 if foo:
     bar()
 while x:
@@ -61,7 +61,7 @@ for (x,y) in dict.items():
 
 縮排距離為四格空白。請不用使用tab縮排，可以設定編輯器將tab鍵動作改成輸入四格空白。
 
-```
+```python
 # 在括弧或是引號等定界符內，參數第一欄縱向對齊要有數值
 foo = long_function_name(var_one,var_two,
               var_three, var_four)
@@ -81,6 +81,7 @@ foo = long_function_name(
 ##空白行
 在開頭重要的Class以及函式宣告和後面的程式之間用兩空白行隔開，寫在程式裡的函式宣告只需要一空白行隔開。
 ```python
+...
 
 class example
     name = "Hello world"
@@ -90,7 +91,7 @@ print example.name
 ##空格
 在括弧內的參數不添加任何空格。
 
-```
+```python
 spam(ham[1],{eggs: 2},[])
 ```
 
