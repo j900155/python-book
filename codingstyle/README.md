@@ -122,7 +122,7 @@ def complex(src=img,dst=frame)
 不要使用空格對齊'#'後的註解或是'='後面的數值。
 ```python
 
-a = 123# a = 123
-ab = 456# ab = 123
+a = 123#a = 123
+ab = 456#ab = 123
 
 ```
