@@ -83,7 +83,7 @@ foo = long_function_name(
 ```python
 ...
 
-class example
+class example:
     name = "Hello world"
     
 print example.name
@@ -97,21 +97,21 @@ spam(ham[1],{eggs: 2},[])
 
 在冒號、分號、逗號前不要加空格，加在後面。
 
-```
+```python
 if x == 4:
     print x, y
 ```
 
 括弧的第一個參數前後均不加任何空白。
 
-```
+```python
 spam(1)
 dict['key'] = list[index]
 ```
 
 運算元或是邏輯符號前後均加空格。當'='在參數表達裡，前後不加空格。
 
-```
+```python
 x = x + y
 x and y
 x == y
@@ -120,3 +120,9 @@ def complex(src=img,dst=frame)
 ```
 
 不要使用空格對齊'#'後的註解或是'='後面的數值。
+```python
+
+a = 123# a = 123
+ab = 456# ab = 123
+
+```
