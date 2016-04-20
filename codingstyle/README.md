@@ -82,10 +82,16 @@ foo = long_function_name(
 在開頭重要的Class以及函式宣告和後面的程式之間用兩空白行隔開，寫在程式裡的函式宣告只需要一空白行隔開。
 ```python
 ...
-
+#空白1號
+#空白2號
 class example:
-    name = "Hello world"
-    
+    def __init__(self):
+        self = 123
+#空白3號
+    def r456():
+        return 456
+#空白4號
+#空白5號
 print example.name
 ```
 ##空格
@@ -122,7 +128,58 @@ def complex(src=img,dst=frame)
 不要使用空格對齊'#'後的註解或是'='後面的數值。
 ```python
 
-a = 123#a = 123
-ab = 456#ab = 123
-
+a = 123 #a = 123
+ab = 456 #ab = 123  
 ```
+
+##Shebang Line(讓作業系統用哪個編譯器)
+```python
+#for python2.X
+#!/usr/bin/env python
+#for python3.X
+#!/usr/bin/env python3
+```
+
+##註解
+
+function的註解要做到看完助解就懂function的用法
+
+```python
+"""
+function: sum
+作用: 做加法
+變數
+    a: 加數
+    b: 被加數
+回傳
+    a+b的結果
+"""
+def sum(a, b):
+  return (a + b)
+```
+
+class的註解
+```python
+"""
+class: Arithmetic(四則運算)
+作用: 四則運算輸出
+變數: a: Int, 
+      b: Int
+function:
+    add
+        function解釋
+    subtraction
+        function解釋
+"""
+class Arithmetic:
+    def __init__(self, a, b):
+      self.a = 0
+      self.b = 0
+      
+    def add():
+        return self.a + self.b
+    
+    def subtraction():
+        return  self.a - self.b
+```
+
