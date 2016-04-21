@@ -237,5 +237,25 @@ from foo.bar import Quux
 from Foob import ar
 ```
 
+##Statements  敘述
+在測試的時候盡量用if else但是只用到if的話最好寫在同一行
+```python
+#GOOD
+if test: print test
+
+#BAD
+
+if foo: bar(foo)
+else:   baz(foo)
+
+try:               bar(foo)
+except ValueError: baz(foo)
+
+try:
+    bar(foo)
+except ValueError: baz(foo)
+```
+
+
 
 
