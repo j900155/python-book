@@ -11,7 +11,7 @@
  
  ```python
  foo_bar(self, width, height, color='black', design=None,
-         strName='foo',emphasis=None, highlight=0) 
+          strName='foo',emphasis=None, highlight=0) 
  ```
  
  ```python
@@ -23,7 +23,7 @@
   
   ```python
   strLine=('This will build a very long long'
-      'long long long long long long string')
+           'long long long long long long string')
  ```
  
 - 放在註解中的URL連結盡量避免分行，如有需要，連結可以放在獨立的一行
@@ -54,7 +54,7 @@ while intMonthear:
 if intYear and intMonth:
     bar()
 return foo
-for (intMonthear, intMonth) in dict.items():
+for (intYear, intMonth) in dict.items():
     print intMonth + intYear
 ```
 
@@ -154,7 +154,7 @@ function: sum
     intValue1 + intValue2的結果
 """
 def sum(intValue1, intValue2):
-  return (intValue1 + intValue2)
+    return (intValue1 + intValue2)
 ```
 
 class的註解
@@ -179,7 +179,7 @@ class Arithmetic:
         return self.intValue1 + self.intValue2
     
     def subtraction():
-        return  self.intValue1 - self.intValue2
+        return self.intValue1 - self.intValue2
 ```
 最後要在不明白或是棘手的地方下註解
 ```python
@@ -217,14 +217,16 @@ StringMixWord = "%s %s * %d"%((StringWord1, StringWord2, intValue)
 如果要換行善用 `\n`
 ```python
 print ("This is much nicer.\n"
-         "Do it this way.\n")
+       "Do it this way.\n")
 ```
 
 ##TODO
 標住未完成的地方並且要告知要完成的結果
-TODO(誰):目標
+TODO(誰):未完成事項
+final:目標
 ```python
-#TODO(imac):it will fly
+#TODO(imac):it need some wing
+#final:it will fly
 
 ```
 
