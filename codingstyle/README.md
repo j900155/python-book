@@ -6,7 +6,8 @@
 ## 分行
 - 一行不要超過80個字，除非其中有包含長URL的註解和很長的引入敘述。
 - 不要使用反斜線來接續兩行。
-- 確保隱行被放在括弧(大、中、小)中，如有必要可以在表達式外額外新增括弧。
+- 確保隱行被放在括弧(大、中
+- 、小)中，如有必要可以在表達式外額外新增括弧。
  
  ```python
  foo_bar(self, width, height, color='black', design=None, x='foo',
@@ -30,7 +31,7 @@
   ```python
   #正確: 
   #See details at
-  #http://www.example.com/us/developer/documentation/api/content/v2.0/csv_file_name_extension_full_specification.html
+  #https://google.github.io/styleguide/pyguide.html
   ```
   
   ```python
