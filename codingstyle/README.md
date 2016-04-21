@@ -275,6 +275,7 @@ class Ball(object):
 ##Naming
 基本上用大駝峰 ，在函數、模組、物件內前面加 ＿
 
+
 | Type | Public | Internal |
 | - | - | - |
 | Packages |	lower_with_under | 	|
