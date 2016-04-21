@@ -206,9 +206,12 @@ class add(intValue, intYear):
 StringWord1 = "hello"
 StringWord2 = "world"
 intValue = 9
-StringMixWord = StringWord1 + StringWord2 #比 StringMixWord = "%s%s"%(StringWord1, StringWord2) 好
-x = "%s %s !!"%(a, b)
-x= "%s %s * %d"%(a, b, c)
+#正確
+StringMixWord = StringWord1 + StringWord2 
+#錯誤
+StringMixWord = "%s%s"%(StringWord1, StringWord2)
+StringMixWord = "%s %s !!"%(StringWord1, StringWord2)
+StringMixWord = "%s %s * %d"%((StringWord1, StringWord2, intValue)
 
 ```
 如果要換行善用 `\n`
