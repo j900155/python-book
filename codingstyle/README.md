@@ -244,7 +244,6 @@ from Foob import ar
 if test: print test
 
 #BAD
-
 if foo: bar(foo)
 else:   baz(foo)
 
@@ -257,5 +256,37 @@ except ValueError: baz(foo)
 ```
 
 
+##Access Control  存取控制
+如果有要存取class內的值利用 property 來做存取
+在2.6版後才有的功能用來去代get ,set
+```python
+class Ball(object):
+    def __init__(self, radius):
+        self._radius = radius
+    
+    @property
+    def isok():
+        if self._radius = radius:
+            return "OK"
+        else
+            return "False"
+```
+
+##Naming
+基本上用大駝峰
+
+| Type | Public | Internal |
+| -- | -- | -- |
+| Packages |	lower_with_under | 	|
+| Modules | lower_with_under | _lower_with_under |
+| Classes |	CapWords | _CapWords |
+| Exceptions | CapWords |
+| Functions | lower_with_under() | _lower_with_under() |
+| Global/Class Constants | CAPS_WITH_UNDER | _CAPS_WITH_UNDER|
+| Global/Class Variables | lower_with_under | _lower_with_under |
+ Instance Variables | lower_with_under | _lower_with_under (protected) or _lower_with_under (private) |
+| Method Names | lower_with_under() | _lower_with_under() (protected) or _lower_with_under() (private) |
+| Function/Method Parameters | lower_with_under |  |
+| Local Variables | lower_with_under |
 
 
