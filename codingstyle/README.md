@@ -215,7 +215,7 @@ x= "%s %s * %d"%(a, b, c)
 ```
 如果要換行善用 \n
 ```python
- print ("This is much nicer.\n"
+print ("This is much nicer.\n"
          "Do it this way.\n")
 ```
 
@@ -276,7 +276,7 @@ class Ball(object):
 基本上用大駝峰 ，在函數、模組、物件內前面加 ＿
 
 | Type | Public | Internal |
-| -- | -- | -- |
+| - | - | - |
 | Packages |	lower_with_under | 	|
 | Modules | lower_with_under | _lower_with_under |
 | Classes |	CapWords | _CapWords |
