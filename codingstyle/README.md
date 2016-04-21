@@ -277,8 +277,8 @@ class Ball(object):
 
 
 | Type | Public | Internal |
-| - | - | - |
-| Packages |	lower_with_under | 	|
+| ---- | ------ | -------- |
+| Packages |	lower_with_under |  	|
 | Modules | lower_with_under | _lower_with_under |
 | Classes |	CapWords | _CapWords |
 | Exceptions | CapWords |
