@@ -1,9 +1,9 @@
 # codingstyle
 
-## 分號
+##分號
 - 不要用分號作為一行的結束且不要用分號作為兩行之間的分隔。
 
-## 分行
+##換行
 - 一行不要超過80個字，除非其中有包含長URL的註解和很長的引入敘述。
 - 不要使用反斜線來接續兩行。
 - 確保隱行被放在括弧(大、中
@@ -240,10 +240,10 @@ from Foob import ar
 ##Statements  敘述
 在測試的時候盡量用if else但是只用到if的話最好寫在同一行
 ```python
-#GOOD
+#正確
 if test: print test
 
-#BAD
+#錯誤
 if foo: bar(foo)
 else:   baz(foo)
 
