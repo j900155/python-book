@@ -290,5 +290,13 @@ class Ball(object):
 | Local Variables | lower_with_under |
 
 ##Main
+主要的程式要放在main()裡面
+```python
+def main():
+      ...
+
+if __name__ == '__main__':
+    main()
+```
 
 
