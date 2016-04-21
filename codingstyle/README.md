@@ -219,3 +219,23 @@ x= "%s %s * %d"%(a, b, c)
          "Do it this way.\n")
 ```
 
+##TODO
+標住未完成的地方並且要告知要完成的結果
+TODO(誰):目標
+```python
+#TODO(imac):it will fly
+
+```
+
+##import
+每一行只import一個
+```python
+import foo
+from foo import bar
+from foo.bar import baz
+from foo.bar import Quux
+from Foob import ar
+```
+
+
+
