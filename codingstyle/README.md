@@ -213,7 +213,7 @@ x = "%s %s !!"%(a, b)
 x= "%s %s * %d"%(a, b, c)
 
 ```
-如果要換行善用 \n
+如果要換行善用 `\n`
 ```python
 print ("This is much nicer.\n"
          "Do it this way.\n")
@@ -273,7 +273,7 @@ class Ball(object):
 ```
 
 ##Naming
-基本上用大駝峰 ，在函數、模組、物件內前面加 ＿
+基本上用大駝峰 ，在函數、模組、物件內前面加 `_`(一個底線)
 
 
 | Type | Public | Internal |
