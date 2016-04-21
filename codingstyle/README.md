@@ -273,7 +273,7 @@ class Ball(object):
 ```
 
 ##Naming
-基本上用大駝峰
+基本上用大駝峰 ，在函數、模組、物件內前面加 ＿
 
 | Type | Public | Internal |
 | -- | -- | -- |
@@ -284,9 +284,11 @@ class Ball(object):
 | Functions | lower_with_under() | _lower_with_under() |
 | Global/Class Constants | CAPS_WITH_UNDER | _CAPS_WITH_UNDER|
 | Global/Class Variables | lower_with_under | _lower_with_under |
- Instance Variables | lower_with_under | _lower_with_under (protected) or _lower_with_under (private) |
+| Instance Variables | lower_with_under | _lower_with_under (protected) or _lower_with_under (private) |
 | Method Names | lower_with_under() | _lower_with_under() (protected) or _lower_with_under() (private) |
 | Function/Method Parameters | lower_with_under |  |
 | Local Variables | lower_with_under |
+
+##Main
 
 
