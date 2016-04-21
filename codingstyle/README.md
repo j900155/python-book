@@ -65,12 +65,12 @@ for (x,y) in dict.items():
 ```python
 # 在括弧或是引號等定界符內，參數第一欄縱向對齊要有數值
 foo = long_function_name(var_one,var_two,
-              var_three, var_four)
+                          var_three, var_four)
 
 # 在dictionary的定界符號內
 foo = {
     long_dictionary_key: value1 +
-                value2,
+                          value2,
     ...
 }
 # 第一行沒有包含參數，第二行要縮排四格空格
