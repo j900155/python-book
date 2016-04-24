@@ -1,4 +1,4 @@
-# 1. 寫出你的慾望
+#1. Whetting Your Appetite
 
 如果你想在電腦上做大量的事，你會想要電腦自行工作。像是對大象的文件執行搜索還替換，或是重新命名還有比對一堆文件和照片就更複雜了。也許你會想寫一個小的資料庫，一個專門的GUI應用程序，或者一個簡單的遊戲。
 
@@ -11,7 +11,7 @@ Python正式你所需要的。
 很多的開發時間去做０.1版的程式。Python是簡單去使用在Windows， Mac OS X和 Unix的作
 業系統，並且幫助你更快速的完成工作。
 
-Python是很簡單去使用但他是直譯式語言。比起batch files或是shell script能為大行程
+Python是很簡單去使用但他是直譯式語言。比起batch files或是shell script能為大型程式
 序提供更多的支援和架構。Python是高階語言而且可以比Ｃ提供更好的錯誤訊息。它擁有高
 階的數據類型像是 flexible arrays 和 dictionaries。因為很多通用的數據類型，Python
 比Awk Perl是用於更大的區域問題而且還更簡單。
