@@ -31,4 +31,4 @@ $ python -m module [arg]
  
 當`script file`是使用的有時候進入 interactive mode是很有用的。它可以在我執行完script之前結束。
 
-全部的指令操作在 Command line and environment中。
+全部的指令操作在 Command line and environment 中。
