@@ -7,4 +7,5 @@
 * [2.1.1. Argument Passing](2. Using the Python Interpreter/2.1. Invoking the Interpreter/2.1.1. Argument Passing.md)
 * [2.1.2. Interactive Mode](2. Using the Python Interpreter/2.1. Invoking the Interpreter/2.1.2.Interactive Mode.md)
 * [2.2.1. Source Code Encoding](2. Using the Python Interpreter/2.2. The Interpreter and Its Environment/2.2.1_source_code_encoding.md)
+* [3. An Informal Introduction to Python](3. An Informal Introduction to Python/3_an_informal_introduction_to_python.md)
 
