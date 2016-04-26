@@ -165,9 +165,9 @@ class: Arithmetic(四則運算)
       intValue2: Int
 function:
     add
-        function解釋
+        function解釋請看上面的function註解
     subtraction
-        function解釋
+        function解釋請看上面的function註解
 """
 class Arithmetic:
     def __init__(self, intValue1, intValue2):
