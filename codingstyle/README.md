@@ -276,12 +276,12 @@ class Ball(object):
 
 ##Naming
 在函數、模組、物件內前面加 `_`(一個底線)
-變數: 變數型態(小寫)+變數名稱(大駝峰)
-Classes: 名稱(大駝峰)
-function: 名稱(小駝峰)
-Exceptions: Ex+名稱(大駝峰)
-Global/Class Constants: 都大寫單字用底線分開
-Global/Class 變數: 都小寫單字用底線分開
+變數: 變數型態(小寫)+變數名稱(大駝峰)  strName
+Classes: 名稱(大駝峰)    Login
+function: 名稱(小駝峰)   tryToDo
+Exceptions: Ex+名稱(大駝峰) ExNoValue
+Global/Class Constants: 都大寫單字用底線分開  IS_ALIVE
+Global/Class 變數: 都小寫單字用底線分開  it_is_class
 
 | Type | Public | Internal |
 | ---- | ------ | -------- |
@@ -298,7 +298,7 @@ Global/Class 變數: 都小寫單字用底線分開
 | Local Variables | lower_with_under |
 
 ##Main
-主要的程式要放在main()裡面
+主要的程式要放在main()裡面並把Main放到最下面
 ```python
 def main():
       ...
