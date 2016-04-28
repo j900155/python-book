@@ -275,7 +275,7 @@ class Ball(object):
 ```
 
 ##Naming
-在函數、模組、物件內前面加 `_`(一個底線)
+在函數、模組、物件內前面加 `_`(一個底線)<br>
 變數: 變數型態(小寫)+變數名稱(大駝峰)  strName <br>
 Classes: 名稱(大駝峰)    Login <br>
 function: 名稱(小駝峰)   tryToDo <br>
