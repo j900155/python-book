@@ -1,15 +1,10 @@
 # 3. An Informal Introduction to Python
-
-在下面的例子中 輸入和輸出是
-In the following examples, input and output are distinguished by the presence or absence of prompts (>>> and ...): to repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin with a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means you must type a blank line; this is used to end a multi-line command.
-
-Many of the examples in this manual, even those entered at the interactive prompt, include comments. Comments in Python start with the hash character, #, and extend to the end of the physical line. A comment may appear at the start of a line or following whitespace or code, but not within a string literal. A hash character within a string literal is just a hash character. Since comments are to clarify code and are not interpreted by Python, they may be omitted when typing in examples.
-
-Some examples:
-
+在接下來的的例子，區分輸出和輸入會分別以提示符(>>>或...)來表示：如果想要重現例子，當提示出現時，你必須在提示符後面輸入所有東西，沒有提示符的行是解釋器的輸出。注意例子中的從屬提示符，你需要輸入一個空行用來做多行命令的結束。<br><br>
+在手冊中的許多例子，甚至有些交互提示符中都含有註解。Python中的註解是以#符號做開頭，並延伸到行的結尾。註解可以出現在行的開始、空行或是程式碼後，但是不會出現在字串符中。字串符中的#僅僅表示#的字符，但是因為註解用的#不會被Python解釋，所以在實施例子中輸入時被省略。<br><br>
+一些列子：
 ```Python
-# this is the first comment
-spam = 1  # and this is the second comment
-          # ... and now a third!
-text = "# This is not a comment because it's inside quotes."
+# 這是第一個註解
+spam = 1  # 這是第二個註解
+          # 第三個註解
+text = "# 這行不是註解因為它在引號內"
 ```
