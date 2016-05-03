@@ -1,81 +1,89 @@
 # 3.1.4. Lists
 
-Python knows a number of compound data types, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.
->>>
+Python 已經有了幾個複合數據類型，用於組織其它的值。 可以寫成括號之間用逗號分隔值。 列表可能包含不同類型的項目， 但通常物品都具有相同的類型。
 
+``` python
 >>> squares = [1, 4, 9, 16, 25]
 >>> squares
 [1, 4, 9, 16, 25]
+```
 
-Like strings (and all other built-in sequence type), lists can be indexed and sliced:
->>>
+如字符串（和其他所有內置序列類型），列表可以被索引和切片：
 
->>> squares[0]  # indexing returns the item
+``` python
+>>> squares[0]  # 索引返回該項目
 1
 >>> squares[-1]
 25
->>> squares[-3:]  # slicing returns a new list
+>>> squares[-3:]  # 切片返回一個新的列表
 [9, 16, 25]
+```
 
-All slice operations return a new list containing the requested elements. This means that the following slice returns a new (shallow) copy of the list:
->>>
+全部的切片作業返回一個新的列表包含所要求的元素。 這意味著下面的切片返回一個新的 (sallow)  複製列表:
 
+``` python
 >>> squares[:]
 [1, 4, 9, 16, 25]
+```
 
-Lists also supports operations like concatenation:
->>>
+列表還支援像是拼接操作：
 
+``` python
 >>> squares + [36, 49, 64, 81, 100]
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+```
 
-Unlike strings, which are immutable, lists are a mutable type, i.e. it is possible to change their content:
->>>
+跟字符串是不一樣，字符串是不可變的，列表是一個可變的類型，即，它可以改變其內容：
 
->>> cubes = [1, 8, 27, 65, 125]  # something's wrong here
->>> 4 ** 3  # the cube of 4 is 64, not 65!
+``` python
+>>> cubes = [1, 8, 27, 65, 125]  # 有一些錯在這邊
+>>> 4 ** 3  # 4的立方是64，而不是65！
 64
->>> cubes[3] = 64  # replace the wrong value
+>>> cubes[3] = 64  # 取代錯的值
 >>> cubes
 [1, 8, 27, 64, 125]
+```
 
-You can also add new items at the end of the list, by using the append() method (we will see more about methods later):
->>>
+您也可以在列表的末尾添加新項目，通過使用append（）方法 (我們將看到更多的方法在以下):
 
->>> cubes.append(216)  # add the cube of 6
->>> cubes.append(7 ** 3)  # and the cube of 7
+``` python
+>>> cubes.append(216)  # 加入6立方
+>>> cubes.append(7 ** 3)  # 和７的立方
 >>> cubes
 [1, 8, 27, 64, 125, 216, 343]
+```
 
-Assignment to slices is also possible, and this can even change the size of the list or clear it entirely:
->>>
+分配到切片也是可能的，並且這甚至可以改變列表的大小或完全清除：
 
+``` python
 >>> letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 >>> letters
 ['a', 'b', 'c', 'd', 'e', 'f', 'g']
->>> # replace some values
+>>> # 替換某些值
 >>> letters[2:5] = ['C', 'D', 'E']
 >>> letters
 ['a', 'b', 'C', 'D', 'E', 'f', 'g']
->>> # now remove them
+>>> # 現在移除他們
 >>> letters[2:5] = []
 >>> letters
 ['a', 'b', 'f', 'g']
->>> # clear the list by replacing all the elements with an empty list
+>>> # 用一個空表格替換所有元素清除列表
 >>> letters[:] = []
 >>> letters
 []
+```
 
-The built-in function len() also applies to lists:
->>>
+內建函數len（）也適用於列表：
 
+``` python
 >>> letters = ['a', 'b', 'c', 'd']
 >>> len(letters)
 4
+```
 
-It is possible to nest lists (create lists containing other lists), for example:
->>>
+它也可以套入列表 (創建其他列表)，例如:
 
+``` python
 >>> a = ['a', 'b', 'c']
 >>> n = [1, 2, 3]
 >>> x = [a, n]
@@ -85,4 +93,4 @@ It is possible to nest lists (create lists containing other lists), for example:
 ['a', 'b', 'c']
 >>> x[0][1]
 'b'
-
+```
