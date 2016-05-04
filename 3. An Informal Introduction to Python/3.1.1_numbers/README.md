@@ -1,8 +1,8 @@
 # 3.1.1. Numbers
 
-The interpreter acts as a simple calculator: you can type an expression at it and it will write the value. Expression syntax is straightforward: the operators +, -, * and / work just like in most other languages (for example, Pascal or C); parentheses (()) can be used for grouping. For example:
->>>
+用直譯器做一個簡單的計算機：你可以輸入一些式子它就會回傳結果。式子的語法很簡單：運算符`+`、`-`、`*` 和`/`運作就像其他的程式語言（如C或Pascal）；括號 `()` 可以用來分組，例如：
 
+```python
 >>> 2 + 2
 4
 >>> 50 - 5*6
@@ -11,58 +11,64 @@ The interpreter acts as a simple calculator: you can type an expression at it an
 5.0
 >>> 8 / 5.0
 1.6
+```
 
-The integer numbers (e.g. 2, 4, 20) have type int, the ones with a fractional part (e.g. 5.0, 1.6) have type float. We will see more about numeric types later in the tutorial.
+整數（如 2、4、20）有一個 int 型態，那些有小數的部分（如 5.0、1.6)有一個 float 型態。我們將看到更多數字型態在後面的教學。
 
-The return type of a division (/) operation depends on its operands. If both operands are of type int, floor division is performed and an int is returned. If either operand is a float, classic division is performed and a float is returned. The // operator is also provided for doing floor division no matter what the operands are. The remainder can be calculated with the % operator:
->>>
+除法`/`運算的回傳類型取決於它的操作數。如果兩個操作數的類型都是 int，除法會執行並回傳一個 int 。如果其中一個是 float，除法式子會回傳一個 float 。運算符`//`不論是什麼數都可以整除。餘數可以用`%`來求：
 
+```python
 >>> 17 / 3  # int / int -> int
 5
 >>> 17 / 3.0  # int / float -> float
 5.666666666666667
->>> 17 // 3.0  # explicit floor division discards the fractional part
+>>> 17 // 3.0  # 整除除法丟掉小數的部分
 5.0
->>> 17 % 3  # the % operator returns the remainder of the division
+>>> 17 % 3  # 運算符 % 回傳除法的餘數
 2
->>> 5 * 3 + 2  # result * divisor + remainder
+>>> 5 * 3 + 2  # 結果 * 除數 + 餘數
 17
+```
 
-With Python, it is possible to use the ** operator to calculate powers [1]:
->>>
+在 Python，可以使用`**`來計算功率[1]：
 
->>> 5 ** 2  # 5 squared
+```python
+>>> 5 ** 2  # 5 的平方
 25
->>> 2 ** 7  # 2 to the power of 7
+>>> 2 ** 7  # 2 的 7 次方
 128
+```
 
-The equal sign (=) is used to assign a value to a variable. Afterwards, no result is displayed before the next interactive prompt:
->>>
+等號`=`用來分配值給變數。之後，不會顯示結果在下一個提示符：
 
+```python
 >>> width = 20
 >>> height = 5 * 9
 >>> width * height
 900
+```
 
-If a variable is not “defined” (assigned a value), trying to use it will give you an error:
->>>
+如果變數沒有被**定義**（賦值），那麼它會給你一個錯誤訊息：
 
->>> n  # try to access an undefined variable
+```python
+>>> n  # 試著不去定義變數
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'n' is not defined
+```
 
-There is full support for floating point; operators with mixed type operands convert the integer operand to floating point:
->>>
+那裡充滿了浮點數；混和不同的運算轉換整數成浮點數：
 
+```python
 >>> 3 * 3.75 / 1.5
 7.5
 >>> 7.0 / 2
 3.5
+```
 
-In interactive mode, the last printed expression is assigned to the variable _. This means that when you are using Python as a desk calculator, it is somewhat easier to continue calculations, for example:
->>>
+在交互的情況下，最近一次的式子給予變數`_`值。這意味著，當你使用 Python 作為桌面計算器，比較容易進行連續計算，例如：
 
+```python
 >>> tax = 12.5 / 100
 >>> price = 100.50
 >>> price * tax
@@ -71,7 +77,8 @@ In interactive mode, the last printed expression is assigned to the variable _. 
 113.0625
 >>> round(_, 2)
 113.06
+```
 
-This variable should be treated as read-only by the user. Don’t explicitly assign a value to it — you would create an independent local variable with the same name masking the built-in variable with its magic behavior.
+這個變數應該被只讀處裡，不要將值明確分配給它 — 你將創建一個有神奇現象的獨立的局部變數，具且有相同名稱掩蓋的內建變數。
 
-In addition to int and float, Python supports other types of numbers, such as Decimal and Fraction. Python also has built-in support for complex numbers, and uses the j or J suffix to indicate the imaginary part (e.g. 3+5j).
+除了 int 和 float，Python 也支持其他類型的數字，如小數和分數。Python 還內建了複數的支援，並使用`J`或`j`字尾來表示的虛數部分（例如3+5J）。
