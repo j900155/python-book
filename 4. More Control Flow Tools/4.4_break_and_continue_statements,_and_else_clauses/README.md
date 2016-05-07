@@ -1,18 +1,16 @@
-# 4.4. break and continue Statements, and else Clauses on Loops
+##4.4. break 和 continue 语句, 以及循环中的 else 子句
+break 语句和 C 中的类似，用于跳出最近的一级 for 或 while 循环。
 
-The break statement, like in C, breaks out of the smallest enclosing for or while loop.
-
-Loop statements may have an else clause; it is executed when the loop terminates through exhaustion of the list (with for) or when the condition becomes false (with while), but not when the loop is terminated by a break statement. This is exemplified by the following loop, which searches for prime numbers:
->>>
-
+循环可以有一个 else 子句；它在循环迭代完整个列表 (对于 for) 后或执行条件为 false (对于 while) 时执行，但循环被 break 中止的情况下不会执行。以下搜索素数的示例程序演示了这个子句:
+```bash
 >>> for n in range(2, 10):
-...     for x in range(2, n):
-...         if n % x == 0:
-...             print n, 'equals', x, '*', n/x
-...             break
-...     else:
-...         # loop fell through without finding a factor
-...         print n, 'is a prime number'
+... for x in range(2, n):
+... if n % x == 0:
+... print n, 'equals', x, '*', n/x
+... break
+... else:
+... # loop fell through without finding a factor
+... print n, 'is a prime number'
 ...
 2 is a prime number
 3 is a prime number
@@ -22,19 +20,18 @@ Loop statements may have an else clause; it is executed when the loop terminates
 7 is a prime number
 8 equals 2 * 4
 9 equals 3 * 3
+```
+(Yes, 这是正确的代码。看仔细: else 语句是属于 for 循环之中, 不是 if 语句。)
 
-(Yes, this is the correct code. Look closely: the else clause belongs to the for loop, not the if statement.)
+与循环一起使用时，else 子句与 try 语句的 else 子句比与 if 语句的具有更多的共同点：try 语句的 else 子句在未出现异常时运行，循环的 else 子句在未出现 break 时运行。更多关于 try 语句和异常的内容，请参见 异常处理。
 
-When used with a loop, the else clause has more in common with the else clause of a try statement than it does that of if statements: a try statement’s else clause runs when no exception occurs, and a loop’s else clause runs when no break occurs. For more on the try statement and exceptions, see Handling Exceptions.
-
-The continue statement, also borrowed from C, continues with the next iteration of the loop:
->>>
-
+continue 语句是从 C 中借鉴来的，它表示循环继续执行下一次迭代:
+```bash
 >>> for num in range(2, 10):
-...     if num % 2 == 0:
-...         print "Found an even number", num
-...         continue
-...     print "Found a number", num
+... if num % 2 == 0:
+... print "Found an even number", num
+... continue
+... print "Found a number", num
 Found an even number 2
 Found a number 3
 Found an even number 4
@@ -43,4 +40,4 @@ Found an even number 6
 Found a number 7
 Found an even number 8
 Found a number 9
-
+```
