@@ -1,32 +1,29 @@
-# 4.3. The range() Function
-
-If you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates lists containing arithmetic progressions:
->>>
-
+##4.3. range() 函数
+如果你需要一个数值序列，内置函数 range() 会很方便，它生成一个等差级数链表:
+```bash
 >>> range(10)
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-The given end point is never part of the generated list; range(10) generates a list of 10 values, the legal indices for items of a sequence of length 10. It is possible to let the range start at another number, or to specify a different increment (even negative; sometimes this is called the ‘step’):
->>>
-
+```
+range(10) 生成了一个包含 10 个值的链表，它用链表的索引值填充了这个长度为 10 的列表，所生成的链表中不包括范围中的结束值。也可以让 range 操作从另一个数值开始，或者可以指定一个不同的步进值(甚至是负数，有时这也被称为 “步长”):
+```bash
 >>> range(5, 10)
 [5, 6, 7, 8, 9]
 >>> range(0, 10, 3)
 [0, 3, 6, 9]
 >>> range(-10, -100, -30)
 [-10, -40, -70]
-
-To iterate over the indices of a sequence, you can combine range() and len() as follows:
->>>
-
+```
+需要迭代链表索引的话，如下所示结合使用 range() 和 len():
+```bash
 >>> a = ['Mary', 'had', 'a', 'little', 'lamb']
 >>> for i in range(len(a)):
-...     print i, a[i]
+... print i, a[i]
 ...
 0 Mary
 1 had
 2 a
 3 little
 4 lamb
+```
+不过，这种场合可以方便地使用 enumerate()，请参见 循环技巧。
 
-In most such cases, however, it is convenient to use the enumerate() function, see Looping Techniques.
