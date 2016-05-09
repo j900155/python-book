@@ -15,5 +15,5 @@ Please enter an integer: 42
 ...
 More
 ```
-可能会有零到多个`elif`部分，`else` 是可選的。`elif` 是 “else if” 的縮寫，這個可以有效避免過深的缩進。`if` ... `elif` ... `else` ... 這樣的寫法用來代替`switch` 或 `case` 語句。
+可能會有零到多个`elif`部分，`else` 是可選的。`elif` 是 “else if” 的縮寫，這個可以有效避免過深的缩進。`if` ... `elif` ... `else` ... 這樣的寫法用來代替`switch` 或 `case` 語句。
 
