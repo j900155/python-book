@@ -1,6 +1,6 @@
 ##4.1. if 语句
-也许最有名的是 if 语句。例如:
-```bash
+if也許是最有名的語句。例如:
+```python
 >>> x = int(raw_input("Please enter an integer: "))
 Please enter an integer: 42
 >>> if x < 0:
@@ -15,5 +15,5 @@ Please enter an integer: 42
 ...
 More
 ```
-可能会有零到多个 elif 部分，else 是可选的。关键字 elif 是 “else if” 的缩写，这个可以有效避免过深的缩进。if ... elif ... elif ... 序列用于替代其它语言中的 switch 或 case 语句。
+可能会有零到多个`elif`部分，`else` 是可選的。`elif` 是 “else if” 的縮寫，這個可以有效避免過深的缩進。`if` ... `elif` ... `else` ... 這樣的寫法用來代替`switch` 或 `case` 語句。
 
