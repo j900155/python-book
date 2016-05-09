@@ -10,7 +10,7 @@ cat 3
 window 6
 defenestrate 12
 ```
-如果你需要在迴圈內修改排序。如果你想要修改你迭代的序列(例如：複製選擇的項目)，建議你複製。使用切割标识就可以很方便地做到这一点:
+如果你需要在迴圈內修改排序(例如：複製選擇的項目)，建議你複製一份再修改因為它不會製作副本。使用分割就可以很方便地做到:
 ```python
 >>> for w in words[:]: # Loop over a slice copy of the entire list.
 ... if len(w) > 6:
