@@ -1,8 +1,8 @@
-##4.4. break 和 continue 语句, 以及循环中的 else 子句
-break 语句和 C 中的类似，用于跳出最近的一级 for 或 while 循环。
+##4.4. break and continue Statements, and else Clauses on Loops
+break 語句和 C 中的類似，用於跳出最近的一级`for`或`while`循环。
 
-循环可以有一个 else 子句；它在循环迭代完整个列表 (对于 for) 后或执行条件为 false (对于 while) 时执行，但循环被 break 中止的情况下不会执行。以下搜索素数的示例程序演示了这个子句:
-```bash
+Loop可以有一个`else`子句；在Loop終止之後執行(對於 for) 后或执行条件为 false (对于 while) 时执行，但循环被 break 中止的情况下不会执行。以下搜索素数的示例程序演示了这个子句:
+```python
 >>> for n in range(2, 10):
 ... for x in range(2, n):
 ... if n % x == 0:
